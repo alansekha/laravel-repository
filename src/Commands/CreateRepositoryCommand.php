@@ -57,7 +57,7 @@ class CreateRepositoryCommand extends GeneratorCommand
     {
         $model = $this->argument('model');
         $modelClass = $this->parseModel($model);
-        $repository = $this->defineBaseRepository($model);
+        $repository = $this->defineBaseRepository($modelClass);
 
         $replace = [
             '{{ namespacedModel }}' => $modelClass,
