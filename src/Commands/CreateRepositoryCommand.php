@@ -18,7 +18,7 @@ class CreateRepositoryCommand extends GeneratorCommand
      */
     protected function getStub()
     {
-        return  base_path() . './Stubs/repository.stub';
+        return  base_path() . '/Stubs/repository.stub';
     }
 
     /**
